@@ -1,0 +1,351 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="PluginFunctions.files/filelist.xml">
+<link rel=Edit-Time-Data href="PluginFunctions.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Функции предоставляемые ПЛАГИНОМ</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Begemot</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Begemot</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2002-10-15T06:48:00Z</o:Created>
+  <o:LastSaved>2002-10-15T06:51:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>370</o:Words>
+  <o:Characters>2113</o:Characters>
+  <o:Lines>17</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2479</o:CharactersWithSpaces>
+  <o:Version>10.2625</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:RelyOnVML/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Compatibility>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:\5B8B\4F53;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:SimSun;
+	color:lime;}
+a:link, span.MsoHyperlink
+	{color:red;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:lime;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:SimSun;
+	color:lime;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="3074"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=black lang=RU link=red vlink=lime style='tab-interval:35.4pt'
+alink="#FFFF00">
+
+<div class=Section1>
+
+<p><span style='font-size:18.0pt'>Функции предоставляемые ПЛАГИНОМ</span></p>
+
+<p>Вызовы этих функций Таймер использует для выполнения действия реализованных
+в плагине. Эти функции являются не обязятельными, т.е. какой-то функции может и
+не бить в вашем плагине.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong><span lang=EN-US style='mso-ansi-language:EN-US'>int WINAPI _export
+VersionTimer(void)</span></strong><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p>Возвращает минимальную версия Таймера, в которой работает плагин.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong><span lang=EN-US style='mso-ansi-language:EN-US'>bool WINAPI _export
+Activate(void)</span></strong><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p>Вызывается один раз, во время активации плагина. В этой функции вы должны
+написать код, который однократно инициализирует плагин.</p>
+
+<p>Возвращает код продолжения:</p>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p>true - продолжать работу плагина.</p>
+
+<p>false - прекратить работу плагина.</p>
+
+</blockquote>
+
+<p>По умолчанию должен использоваться <u>true</u></p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong><span lang=EN-US style='mso-ansi-language:EN-US'>bool WINAPI _export
+Close(void)</span></strong><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p>Вызывается один раз, при закрытии плагина. В этой функции вы должны описать
+код готовящий плагин к удалению из памяти.</p>
+
+<p>Возвращает код продолжения:</p>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p>true - продолжить удаление плагина</p>
+
+<p>false - плагин удалять нельзя.</p>
+
+</blockquote>
+
+<p>По умолчанию должен использоваться <u>true</u></p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong><span lang=EN-US style='mso-ansi-language:EN-US'>void WINAPI _export
+Configure(void)</span></strong><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p>Эта функция предназначена для конфигурирования (настройки) плагина
+пользователем, т.е. при вызове этой функции должна вызываться форма с
+определенными настройками плагина.</p>
+
+<p>Если настройки не используются, то можно не включать вызов этой функции.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong><span lang=EN-US style='mso-ansi-language:EN-US'>void WINAPI _export
+AboutPlugin(void)</span></strong><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p>Функция должна выдавать на экран информацию о плагине.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong><span lang=EN-US style='mso-ansi-language:EN-US'>int WINAPI _export RunPlugin(int
+Tim,char *WaveFile)</span></strong><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p>Вызывается для передачи управления плагину по оповещению пользователя об
+истечении времени.</p>
+
+<p>Параметры:</p>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p>Tim - количество секунд, на которые был поставлен Таймер.</p>
+
+<p>WaveFile - файл для проигрывания</p>
+
+</blockquote>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong><span lang=EN-US style='mso-ansi-language:EN-US'>char * WINAPI
+_export PluginName(void)</span></strong><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p>Возвращает текстовую строку с наименованием плагина.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong><span lang=EN-US style='mso-ansi-language:EN-US'>void WINAPI _export
+TimerEvent(void)</span></strong><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p>Вызывается таймером каждую секунду во время своей работы.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong><span lang=EN-US style='mso-ansi-language:EN-US'>bool WINAPI _export
+StartClick(void)</span></strong><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p>Вызывается Таймером при нажатии пользователем на кнопку ПУСК, или вызова
+функции ButtonStartClick</p>
+
+<p>Возвращаемые значения:</p>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p>true - продолжать процедуру нажатия кнопки ПУСК</p>
+
+<p>false - закончить процедуру остановом.</p>
+
+</blockquote>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong><span lang=EN-US style='mso-ansi-language:EN-US'>bool WINAPI _export
+StopClick(void)</span></strong><span lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p>Вызывается Таймером при нажатии пользователем на кнопку СТОП, или вызова
+функции ButtonStopClick</p>
+
+<p>Возвращаесые значения:</p>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p>true - продолжать процедуру нажатия кнопки СТОП</p>
+
+<p>false - закончить процедуру остановом.</p>
+
+</blockquote>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><span lang=EN-US style='mso-ansi-language:EN-US'>void WINAPI _export
+DropFiles(char *Str)<o:p></o:p></span></p>
+
+<p>Вызывается тамером, если на его галвную форму &quot;кинули&quot;
+(Drag-and-Drop) файл</p>
+
+<p>Параметры:</p>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p>Str - путь к файлу, который кинули.</p>
+
+</blockquote>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p align=center style='text-align:center'><a href="TimerPlugins.htm">[О
+плагинах таймера]</a> <a href="INDEX.HTM">[Содержание] </a></p>
+
+</div>
+
+</body>
+
+</html>

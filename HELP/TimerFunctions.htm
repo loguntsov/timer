@@ -1,0 +1,349 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="TimerFunctions.files/filelist.xml">
+<link rel=Edit-Time-Data href="TimerFunctions.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Функции предоставляемый ТАЙМЕРОМ</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Begemot</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Begemot</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2002-10-15T06:49:00Z</o:Created>
+  <o:LastSaved>2002-10-15T06:49:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>333</o:Words>
+  <o:Characters>1899</o:Characters>
+  <o:Lines>15</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2228</o:CharactersWithSpaces>
+  <o:Version>10.2625</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:RelyOnVML/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Compatibility>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:\5B8B\4F53;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:SimSun;
+	color:lime;}
+a:link, span.MsoHyperlink
+	{color:yellow;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:lime;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:SimSun;
+	color:lime;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=black lang=RU link=yellow vlink=lime style='tab-interval:35.4pt'
+alink="#FF0000">
+
+<div class=Section1>
+
+<p><span style='font-size:18.0pt'>Функции предоставляемые ТАЙМЕРОМ</span></p>
+
+<p>Эти функции вы можете использовать в своей программе для организации
+взаимодействия ПЛАГИНА и ТАЙМЕРА.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong><span lang=EN-US style='mso-ansi-language:EN-US'>void WINAPI
+StickFormResize(HWND Form,int NewWidth,int NewHeight); </span></strong><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p>Вызывается при изменении размеров формы плагина</p>
+
+<p>Эта функция должна использоваться если вы используете прилипающие формы, и
+ваша форма изменила размеры.</p>
+
+<p>Параметры:</p>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p>Form - указатель на вашу форму</p>
+
+<p>NewWidth,NewHeight - соответственно новые длина и высота формы</p>
+
+</blockquote>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong><span lang=EN-US style='mso-ansi-language:EN-US'>void WINAPI
+StickFormMove(HWND Form,int NewLeft,int NewTop); </span></strong><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p>Вызывается при перемещении формы плагина.</p>
+
+<p>Функция должна вызываться перемещения вашей прилипающей формы.</p>
+
+<p>Параметры:</p>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p>Form - указатель на вашу форму</p>
+
+<p>NewLeft,NewTop - соответственно новые координаты X и Y левого верхнего угла
+формы.</p>
+
+</blockquote>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong>void WINAPI StickFormEndMove(void);</strong></p>
+
+<p>Вы должны использовать эту функцию, чтобы указать Таймеру, что вы не будете
+больше перемещать прилипающую форму.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong><span lang=EN-US style='mso-ansi-language:EN-US'>void WINAPI
+AddStickForm(HWND Form); </span></strong><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p>Добавление формы, которая прилипает к основной форме таймера.</p>
+
+<p>Параметры:</p>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p>Form - указатель на вашу форму.</p>
+
+</blockquote>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong><span lang=EN-US style='mso-ansi-language:EN-US'>void WINAPI
+DeleteStickForm(HWND Form); </span></strong><span lang=EN-US style='mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p>Удаление формы, прилипающей к основной форме таймера.</p>
+
+<p>Параметры:</p>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p>Form - указатель на вашу форму.</p>
+
+</blockquote>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong><span lang=EN-US style='mso-ansi-language:EN-US'>void WINAPI
+ViewFormAfterTime(char * FileNameToPlay,HDC HBitmap,char * Str);</span></strong><span
+lang=EN-US style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p>Выводит стандартную форму оповещения Таймера.</p>
+
+<p>Параметры:</p>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p>FileNameToPlay - путь к файлу, который нужно проиграть</p>
+
+</blockquote>
+
+<blockquote style='margin-top:5.0pt;margin-bottom:5.0pt'>
+
+<p>HBitmap - указатель на контекст устроства в котором хранится фон формы.</p>
+
+<p>Str - строка которая будет мерцать в форме</p>
+
+</blockquote>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong>char * WINAPI GetRegistryPath(void);</strong></p>
+
+<p>Возвращает местоположение настроек плагинов для таймера.в реестре.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong>HWND WINAPI GetHWNDMainTimerForm(void); </strong></p>
+
+<p>Возвращает HWND главной формы Таймера.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong><span lang=EN-US style='mso-ansi-language:EN-US'>void WINAPI
+WebBrowserOpenURL(char * URL);</span></strong><span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p>Открывает Web Browser Таймера на заданном URL.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong>char * WINAPI GetPluginDir(void);</strong></p>
+
+<p>Возвращает путь в каталог плагинов Таймера.</p>
+
+<p>Желательно использовать эту функцию вместо GetCurrentDir(), которая
+возвращает неправильный путь.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong>void WINAPI ButtonStartClick(void); </strong></p>
+
+<p>Эмулирует нажатие кнопки ПУСК</p>
+
+<p>Аналогично, если вы нажмете кнопку ПУСК Таймера</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p><strong>void WINAPI ButtonStopClick(void); </strong></p>
+
+<p>Эмулирует нажатие кнопки СТОП</p>
+
+<p>Аналогично, если вы нажмете кнопку СТОП Таймера.</p>
+
+<div class=MsoNormal align=center style='text-align:center'>
+
+<hr size=2 width="100%" align=center>
+
+</div>
+
+<p align=center style='text-align:center'><a href="INDEX.HTM">Содержание </a></p>
+
+</div>
+
+</body>
+
+</html>

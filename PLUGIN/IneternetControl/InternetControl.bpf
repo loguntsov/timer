@@ -1,0 +1,7 @@
+USEUNIT("Module.cpp");
+USEFORM("ConfigForm.cpp", ConfigF);
+USEFORM("UnitInfoForm.cpp", InfoForm);
+//---------------------------------------------------------------------------
+This file is used by the project manager only and should be treated like the project file
+
+DllEntryPoint

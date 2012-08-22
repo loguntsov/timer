@@ -1,0 +1,18 @@
+[OPTIONS]
+Compatibility=1.0
+Compiled file=Timer.chm
+Contents file=Timer.HHC
+Default topic=index.htm
+Display compile progress=No
+Language=0x419 Русский
+Title=Таймер
+
+
+[FILES]
+AboutTimer.HTM
+HAHA.HTM
+INDEX.HTM
+LIC.HTM
+NEW.HTM
+TIMER.HTM
+CopyTimer.HTM

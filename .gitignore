@@ -1,0 +1,4 @@
+*.obj
+*.~*
+Thumbs.db
+*.lib

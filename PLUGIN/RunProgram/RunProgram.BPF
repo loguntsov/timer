@@ -1,0 +1,7 @@
+USEUNIT("Module.cpp");
+USEFORM("UnitConfigForm.cpp", ConfigForm);
+USERES("RunProgram.res");
+//---------------------------------------------------------------------------
+This file is used by the project manager only and should be treated like the project file
+
+DllEntryPoint
